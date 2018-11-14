@@ -14,5 +14,5 @@ breakfast oneplus3
 if [[ -z "${LIMIT_CORES}" ]]; then
     make -j
 else
-    make -j8
+    make -j2
 fi
