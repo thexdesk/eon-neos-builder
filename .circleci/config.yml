@@ -10,7 +10,7 @@ jobs:
           command: "docker build -t eon-neos-builder ."
       - run:
           name: Build images
-          command: "docker run eon-neos-builder ./run_ci.sh"
+          command: "docker run --priviliged eon-neos-builder ./run_ci.sh"
 
 workflows:
   version: 2
