@@ -10,7 +10,8 @@ jobs:
           command: "docker build -t eon-neos-builder ."
       - run:
           name: Build images
-          command: "docker run --priviliged eon-neos-builder ./run_ci.sh"
+          command: "docker run --privileged eon-neos-builder ./run_ci.sh"
+          timeout: 86400
 
 workflows:
   version: 2
